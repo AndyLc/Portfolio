@@ -3,9 +3,9 @@
 @import "material.min.css";
 @import "home.css";
 @import "prism.css";
-@import "timeline.css";
 @import "blog.css";
 @import "nancy.css";
+@import "card.css.scss";
 
 @font-face {
     font-family: 'Roboto';
@@ -17,6 +17,9 @@ body {
     text-align: center;
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
+    a {
+      color: #64C2EC;
+    }
 }
 
 .hidden {

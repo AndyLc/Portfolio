@@ -41,30 +41,30 @@ div.home {
     div.brain {
       //padding-top: 100px;
       strong {
-        color: #673AB7;
+        color: #8DAABA;
       }
       ul li {
-        border-bottom: 1px solid #673AB7;
+        border-bottom: 1px solid #8DAABA;
         display:inline-block;
       }
     }
     div.heart {
       //padding-top: 150px;
       strong {
-        color: #E91E63;
+        color: #F74356;
       }
       ul li {
-        border-bottom: 1px solid #E91E63;
+        border-bottom: 1px solid #F74356;
         display:inline-block;
       }
     }
     div.hand {
       strong {
-        color: #00BCD4;
+        color: #64C2EC;
       }
       ul li {
         display:inline-block;
-        border-bottom: 1px solid #00BCD4;
+        border-bottom: 1px solid #64C2EC;
       }
     }
   }
@@ -85,6 +85,7 @@ div.home {
     h1 {
       padding-top: 2em;
       font-size: 70px;
+      font-weight: 600;
     }
     p {
       font-size: 25px;
@@ -182,25 +183,25 @@ div.home {
       top: -657px;
       left: -15px;
       div {
-        background-color: #673AB7;
+        background-color: #8DAABA;
       }
-      background-color: #673AB7;
+      background-color: #8DAABA;
     }
     div.hand {
       right: -160px;
       bottom: -50px;
       div {
-        background-color: #00BCD4;
+        background-color: #64C2EC;
       }
-      background-color: #00BCD4;
+      background-color: #64C2EC;
     }
     div.heart {
       top: -350px;
       right: -30px;
       div {
-        background-color: #E91E63;
+        background-color: #F74356;
       }
-      background-color: #E91E63;
+      background-color: #F74356;
     }
     div.hover-node  {
       z-index: 3;
@@ -233,21 +234,21 @@ div.home {
         }
         &.brain {
           strong {
-            color: #673AB7;
+            color: #8DAABA;
           }
           transform: translateX(34%);
           opacity: 0;
         }
         &.heart {
           strong {
-            color: #E91E63;
+            color: #F74356;
           }
           opacity: 0;
           transform: translateX(50%);
         }
         &.hand {
           strong {
-            color: #00BCD4;
+            color: #64C2EC;
           }
           opacity: 0;
           transform: translate(58%);
@@ -290,7 +291,7 @@ div.home {
 }
 
 $bar-color: #E0E0E0;
-$ball-color: #00BCD4;
+$ball-color: #64C2EC;
 $bg-color: white;
 
 .loader {
