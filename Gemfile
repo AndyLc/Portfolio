@@ -18,4 +18,3 @@ gem 'middleman-deploy', '2.0.0.pre.alpha'
 gem 'builder'
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem 'nokogiri'
-gem "middleman-disqus"

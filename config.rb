@@ -21,7 +21,7 @@ activate :deploy do |deploy|
   deploy.build_before = true # runs build before deploying
   deploy.deploy_method = :git
   deploy.branch = 'master'
-  deploy.remote   = "origin"
+  deploy.remote   = "io"
 end
 # Reload the browser automatically whenever files change
 configure :development do
@@ -40,10 +40,6 @@ activate :sprockets
 #     "Helping"
 #   end
 # end
-
-activate :disqus do |d|
-  d.shortname = 'andylchf' # Replace with your Disqus shortname.
-end
 
 # Build-specific configuration
 configure :build do

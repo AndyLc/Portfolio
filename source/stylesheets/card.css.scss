@@ -49,7 +49,7 @@ h1 {
   float: left;
   padding: 0 1.7rem;
   width: 33%;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   .menu-content {
     @include cf;
     margin: 0;
@@ -161,6 +161,12 @@ h1 {
 
 @media only screen and (max-width : 768px) {
   .card {
+    .wrapper {
+      min-height: 400px;
+    }
     width: 100%;
+    .data {
+      transform: translateY(0) !important;
+    }
   }
 }
