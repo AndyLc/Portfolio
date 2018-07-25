@@ -11,8 +11,10 @@
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
+    <% if current_page.data.title != "EigenBeat" %>
+      <%= stylesheet_link_tag :site %>
+      <%= javascript_include_tag :all %>
+    <% end %>
   </head>
   <body class="<%= page_classes %>">
     <div id="loader-wrapper" class="hidden">
@@ -27,15 +29,17 @@
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
-    <nav>
-      <a href="/">ME</a>
-      <a href="/projects.html">PROJECTS</a>
-      <div class="right social-icons">
-        <span>yan.andy4@gmail.com</span>
-        <a href="https://github.com/AndyLc"><%= image_tag "social-icons/SVG/Github-black.svg" %></a>
-        <a href="https://www.linkedin.com/in/andy-yan-814796121"><%= image_tag "social-icons/SVG/LinkedIn-black.svg" %></a>
-      </div>
-    </nav>
+    <% if current_page.data.title != "EigenBeat" %>
+      <nav>
+        <a href="/">ME</a>
+        <a href="/projects.html">PROJECTS</a>
+        <div class="right social-icons">
+          <span>yan.andy4@gmail.com</span>
+          <a href="https://github.com/AndyLc"><%= image_tag "social-icons/SVG/Github-black.svg" %></a>
+          <a href="https://www.linkedin.com/in/andy-yan-814796121"><%= image_tag "social-icons/SVG/LinkedIn-black.svg" %></a>
+        </div>
+      </nav>
+    <% end %>
     <div class="container">
       <%= yield %>
     </div>
