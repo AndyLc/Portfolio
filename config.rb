@@ -40,19 +40,11 @@ activate :sprockets
 #     "Helping"
 #   end
 # end
-activate :blog do |blog|
-  blog.name = "general"
-  blog.prefix = "general"
-  blog.layout = "layouts/blog"
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
-end
 
 activate :disqus do |d|
   d.shortname = 'andylchf' # Replace with your Disqus shortname.
 end
 
-page "/feed.xml", layout: false
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
